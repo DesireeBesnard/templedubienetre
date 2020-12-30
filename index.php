@@ -49,8 +49,8 @@
 
 if ( have_posts() ) { // cette condition vérifie s'il y a des messages existants à afficher.
     $counter = 1;
-    while ( have_posts() ) { // début de la boucle WordPress. Parcours les articles et exécute le code entre les crochets {} pour chaque article.
-        the_post(); // cette fonction WP récupère le post suivant, cela nous permet d'utiliser les fonctions ci-dessous 
+    while ( have_posts() ) { // début de la boucle WordPress. Tant qu'il y a des articles à afficher, exécutez la ligne de code suivante
+        the_post(); // Appelle les données du prochain article, configure le message. Une fois que nous avons appelé notre message, nous pouvons afficher tout ce que nous voulons (contenu, date de publication, auteur, catégorie ).
 ?>
                         <!--Grid column-->
                         <div class="col-lg-4 col-md-12 mb-4">
@@ -97,54 +97,7 @@ if ( have_posts() ) { // cette condition vérifie s'il y a des messages existant
                     <!--Grid row-->
 
                 <!--Pagination -->
-                <nav class="d-flex justify-content-center my-4 wow fadeIn">
-                    <ul class="pagination pagination-circle pg-info mb-0">
-
-                        <!--First-->
-                        <li class="page-item disabled">
-                            <a class="page-link">First</a>
-                        </li>
-
-                        <!--Arrow left-->
-                        <li class="page-item disabled">
-                            <a class="page-link" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-
-                        <!--Numbers-->
-                        <li class="page-item active">
-                            <a class="page-link">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">4</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">5</a>
-                        </li>
-
-                        <!--Arrow right-->
-                        <li class="page-item">
-                            <a class="page-link" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-
-                        <!--Last-->
-                        <li class="page-item">
-                            <a class="page-link">Last</a>
-                        </li>
-
-                    </ul>
-                </nav>
+                <?php mdb_pagination(); ?>
 
             </section>
             <!--Section: Articles-->
@@ -153,74 +106,4 @@ if ( have_posts() ) { // cette condition vérifie s'il y a des messages existant
     </main>
     <!--Main layout-->
 
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-        <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/b4/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-                <i class="fa fa-download ml-2"></i>
-            </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-                <i class="fa fa-graduation-cap ml-2"></i>
-            </a>
-        </div>
-        <!--/.Call to action-->
-
-        <hr class="my-4">
-
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                <i class="fab fa-facebook-f mr-3"></i>
-            </a>
-
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-                <i class="fa fa-youtube mr-3"></i>
-            </a>
-
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-                <i class="fab fa-google-plus-g mr-3"></i>
-            </a>
-
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                <i class="fa fa-dribbble mr-3"></i>
-            </a>
-
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
-                <i class="fa fa-pinterest mr-3"></i>
-            </a>
-
-            <a href="https://github.com/mdbootstrap/mdb-ui-kit" target="_blank">
-                <i class="fa fa-github mr-3"></i>
-            </a>
-
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fa fa-codepen mr-3"></i>
-            </a>
-        </div>
-        <!-- Social icons -->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            © 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-        </div>
-        <!--/.Copyright-->
 <?php  get_footer(); ?>
-
-<?php
-    // if ( have_posts() ) {
-    //     $counter = 1;
-    //     while ( have_posts() ) {
-    //         the_post();
-    //         if ($counter % 3 == 0) { 
-    //         }
-    //         $counter++;
-    //     } // end while
-    // } // end if
-?>
