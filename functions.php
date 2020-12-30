@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Include external files
+ */
+require_once('components/pagination.inc.php');
+
+/**
  * Include CSS files
  */
 function theme_enqueue_scripts() {
