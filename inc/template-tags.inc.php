@@ -17,15 +17,15 @@ if ( !function_exists( 'shape_comment' ) ) :
                 <div class="post pingback">
                     <p><?php _e( 'Pingback:', 'shape' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'shape' ), ' ' ); ?></p>
                 </div>
-                    <?php
-                    break;
-                default :
-                    ?>
-                    <?php
-                    if ( $depth > 1 ) {
-                        echo '<div class="media d-block d-md-flex ml-5">';
-                    }
-                    ?>
+                <?php
+                break;
+            default :
+                ?>
+                <?php
+                if ( $depth > 1 ) {
+                    echo '<div class="media d-block d-md-flex ml-5">';
+                }
+                ?>
                 <div class="media d-block d-md-flex mt-4" <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
                         <?php if($comment->user_id) { ?>
 

@@ -56,7 +56,7 @@
         <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
     </div>
     <!--/.Copyright-->
-
+</footer>
 <?php wp_footer(); ?>
 
 </body>

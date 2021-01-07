@@ -3,7 +3,8 @@
 /**
  * Include external files
  */
-require_once('components/pagination.inc.php');
+ require_once('inc/pagination.inc.php');
+ require_once('inc/template-tags.inc.php');
 
 /**
  * Include CSS files
@@ -21,4 +22,30 @@ function theme_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
+/**
+ * Setup Theme
+ */
+ function mdbtheme_setup() {
+        // Add featured image support
+        add_theme_support('post-thumbnails');
+    }
+    add_action('after_setup_theme', 'mdbtheme_setup');
+    
+    /**
+     * Register our sidebars and widgetized areas.
+     */
+    function mdb_widgets_init() {
+    
+      register_sidebar( array(
+        'name'          => 'Sidebar',
+        'id'            => 'sidebar',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
+      ) );
+    
+    }
+    add_action( 'widgets_init', 'mdb_widgets_init' );
+    
 ?>
