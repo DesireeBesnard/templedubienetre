@@ -4,7 +4,7 @@
 
         <!-- Brand -->
         <a class="navbar-brand pt-0 waves-effect" href="">
-            <img src="https://mdbootstrap.com/img/logo/mdb-noshadow-38px" alt="MDB logo">
+            <!-- <img src="https://mdbootstrap.com/img/logo/mdb-noshadow-38px" alt="MDB logo"> -->
         </a>
 
         <!-- Collapse -->
