@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/*
+Main
+*/
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.cust-purple {
+  color:#872D83 !important;
+}
+
+.cust-yellow {
+  color: #EFB100;
+}
+
+/*
+Header section
+*/
+.website-logo {
+  width: 120px;
+  height:auto;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #872D83;
+}
+
 .blue-gradient {
   background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
@@ -44,3 +74,4 @@ ins {
   color: white;
 }
 /* E-commerce section  */
+

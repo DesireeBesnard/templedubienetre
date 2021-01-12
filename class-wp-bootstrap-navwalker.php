@@ -165,12 +165,9 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			 */
 			$args = apply_filters( 'nav_menu_item_args', $args, $item, $depth );
 
-			// Add .dropdown or .active classes where they are needed.
+			// Add .dropdown classes where they are needed.
 			if ( $this->has_children ) {
 				$classes[] = 'dropdown';
-			}
-			if ( in_array( 'current-menu-item', $classes, true ) || in_array( 'current-menu-parent', $classes, true ) ) {
-				$classes[] = 'active';
 			}
 
 			// Add some additional default classes to the item.
