@@ -1,11 +1,15 @@
-.page-footer {
-  background-color: #114A7C; }
-
 .blue-gradient {
   background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
   background: linear-gradient(40deg, #45cafc, #303f9f) !important; }
 
+.pagination .page-item.active .page-link {
+  background-color: #09c; }
+
+.page-footer {
+    background-color: #114A7C; }
+
+ /* Blog section  */
 .card-comments img {
   width: 4rem; }
 
@@ -15,12 +19,28 @@
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important; }
 
-.navbar-brand img {
-  height: 20px; }
-
-.pagination .page-item.active .page-link {
-  background-color: #09c; }
-
 .card-avatar img {
   width: 100px; }
 
+/* Blog section  */
+
+/* E-commerce section  */
+.table-products img {
+  max-width: 200px;
+  max-height: 200px; }
+
+.table-products tr th, .table-products tr td {
+  vertical-align: middle; }
+
+ins {
+      text-decoration: none;
+}
+
+.w-100px{
+  width: 100px;
+}
+
+.white-text>a {
+  color: white;
+}
+/* E-commerce section  */
