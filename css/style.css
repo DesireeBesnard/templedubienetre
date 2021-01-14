@@ -3,13 +3,17 @@
 /*
 Main
 */
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 .raleway {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
 
 .cust-purple {
-  color:#872D83 !important;
+  color: #872D83 !important;
 }
 
 .cust-yellow {
@@ -17,21 +21,59 @@ Main
 }
 
 /*
-Header section
+Navbar
 */
+
 .website-logo {
   width: 120px;
-  height:auto;
+  height: auto;
 }
 
 .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     color: #872D83;
+    font-size: 13px;
+    border-bottom: 3px solid transparent;
 }
 
-.blue-gradient {
-  background: -webkit-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
-  background: linear-gradient(40deg, #45cafc, #303f9f) !important; }
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: #EFB100;
+    border-bottom: 3px solid #EFB100;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:active {
+    color: #EFB100;
+    border-bottom: 3px solid #EFB100;
+}
+
+.dropdown-menu {
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.navbar .dropdown-menu a:not(.active) {
+    color: #872D83;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.navbar .dropdown-menu a:not(.active):hover {
+    color: #EFB100;
+}
+
+#phone-number {
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.purple-button {
+  background-color: #872D83 !important;
+}
+
+/*
+Header section
+*/
 
 .pagination .page-item.active .page-link {
   background-color: #09c; }
