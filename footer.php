@@ -47,6 +47,8 @@
         <a href="http://codepen.io/mdbootstrap/" target="_blank">
             <i class="fa fa-codepen mr-3"></i>
         </a>
+        <a href="https://www.facebook.com/hammanletempledubienetre/" target="_blank"><i class="ml-2 cust-purple fab fa-lg fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/hammamletempledubienetre/?hl=fr" target="_blank"><i class="ml-2 cust-purple fab fa-lg fa-instagram"></i></a>
     </div>
     <!-- Social icons -->
 
